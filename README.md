@@ -77,18 +77,6 @@ Open **about:addons → Strip Special Characters → Options**, or click the gea
 
 ---
 
-## Publishing on AMO
-
-1. Prepare and zip your extension files (including `icons/`, `manifest.json`, `background.js`, `options.html`, `options.js`).
-2. Create a developer account at [addons.mozilla.org/developers](https://addons.mozilla.org/developers).
-3. Submit a new add-on, upload the ZIP, and fill in metadata:
-   - **Name**: Strip Special Characters
-   - **Summary**: Right-click to strip characters per your whitelist or blacklist.
-   - **Tags**: form-tools, text-cleanup, context-menu
-4. Agree to the MIT License, then publish.
-
----
-
 ## Contributing & Support
 
 Found a bug or want a feature? Please open an issue or pull request at:
