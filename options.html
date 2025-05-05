@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Strip Special Characters – Settings</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; max-width: 600px; }
+    fieldset { border: none; padding: 0; margin: 0; }
+    legend { font-weight: bold; }
+    label { display: block; margin-top: 1em; }
+    input[type="text"]:disabled { background: #f0f0f0; }
+    .hint { font-size: 0.9em; color: #666; margin-top: 0.2em; }
+  </style>
+</head>
+<body>
+  <h2>Character Stripping Settings</h2>
+
+  <fieldset>
+    <legend>Mode</legend>
+    <label>
+      <input type="radio" name="mode" id="modeWhitelist" value="whitelist" />
+      Whitelist-mode (strip everything except whitelist)
+    </label>
+    <label>
+      <input type="radio" name="mode" id="modeBlacklist" value="blacklist" />
+      Blacklist-mode (strip only blacklist)
+    </label>
+  </fieldset>
+
+  <label for="blacklist">Blacklist special characters:</label>
+  <input type="text" id="blacklist"
+         placeholder="e.g. !@#$%^&*()_+=~`{}[]|\:;\"'<>,.?/" />
+  <p class="hint">Used only in Blacklist-mode.</p>
+
+  <label for="whitelist">Whitelist special characters:</label>
+  <input type="text" id="whitelist" placeholder="e.g. -_." />
+  <p class="hint">Used only in Whitelist-mode.</p>
+
+<!-- wrap buttons to center them -->
+<div style="text-align:center; margin-top:1em;">
+  <button
+    id="save"
+    style="display:inline-block; width:auto; padding:4px 8px; font-size:0.9rem; margin:0 4px; text-align:center;"
+  >
+    Save
+  </button>
+  <button
+    id="reset"
+    style="display:inline-block; width:auto; padding:4px 8px; font-size:0.9rem; margin:0 4px; text-align:center;"
+  >
+    Reset Defaults
+  </button>
+</div>
+
+  <script src="options.js"></script>
+</body>
+</html>
