@@ -47,6 +47,10 @@ _For permanent install and publishing, see [Publishing on AMO](#publishing-on-am
 
 ## Usage
 
+<p align="center">
+  <img src="assets/example_use.png" alt="Options page screenshot" width="600"/>
+</p>
+
 1. Select text in any form field.
 2. Right-click → **Strip special characters** (or press your shortcut).
 3. Depending on your mode:
